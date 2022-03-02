@@ -20,19 +20,36 @@ const Tabs = (topics) => {
   const newsTab1 = document.createElement("div");
   const newsTab2 = document.createElement("div");
   const newsTab3 = document.createElement("div");
+  const newsTab4 = document.createElement("div");
+  const newsTab5 = document.createElement("div");
+
   
   newsTopics.appendChild(newsTab1);
   newsTopics.appendChild(newsTab2);
   newsTopics.appendChild(newsTab3);
+  newsTopics.appendChild(newsTab4);
+  newsTopics.appendChild(newsTab5);
+
+
+  // newsTab1.addEventListener("click", () => {
+  //   console.log("It's working");
+  //   document.getElementsByClassName("headline")
+  // })
 
   newsTopics.classList.add("topics");
   newsTab1.classList.add("tab");
   newsTab2.classList.add("tab");
   newsTab3.classList.add("tab");
+  newsTab4.classList.add("tab");
+  newsTab5.classList.add("tab");
+
 
   newsTab1.textContent = topics[0];
   newsTab2.textContent = topics[1];
   newsTab3.textContent = topics[2];
+  newsTab4.textContent = topics[3];
+  newsTab5.textContent = topics[4];
+
 
   return newsTopics;
 }
